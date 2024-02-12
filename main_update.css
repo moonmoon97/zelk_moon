@@ -660,9 +660,12 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
   background-color: var(--background-primary) !important;
 }
 /* mentions */
-.wrapper__2d9b1 {
+/*.wrapper__2d9b1 {
   background: #BDE6FB30 !important;
   color: var(--accent-color);
+}*/
+.mentioned__58017:hover {
+  background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
 }
 /* profiles */
 .bodyTitle-3FWCs2, .bodyTitle-2Az3VQ, .footer-1N3bR3, .protip-2urNh2 {
@@ -833,7 +836,7 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
 /* better roles | thanks to Bowser65#1337 */
 .role__631a3 {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 11px;
 }
 .roleCircle-1EgnFN::before {
