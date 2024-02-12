@@ -836,7 +836,7 @@ svg.slider-32CRPX svg, .bd-switch-slider>svg {
 /* better roles | thanks to Bowser65#1337 */
 .role__631a3 {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 11px;
 }
 .roleCircle-1EgnFN::before {
