@@ -1,8 +1,7 @@
 <div align=center><h1>Zelk</h1>
 
-<p>
 Zelk is a smooth Discord theme inspired by the Zorin GTK Theme.
-This repository is my own version of the [original](https://github.com/schnensch0/zelk) theme made by schnensch.</p>
+This repository is my own version of the [original](https://github.com/schnensch0/zelk) theme made by schnensch.
 
 <!--
 <p>
