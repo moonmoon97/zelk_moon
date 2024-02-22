@@ -1,9 +1,19 @@
+/**
+ * @name Zelk_moon
+ * @description a smooth theme inspired by zorin. Originally made by: schnensch
+ * @author MoonMoon
+ */
+
 /*         ▀▀█ █▀▀ █   █ █
            ▄▀  █▀▀ █   █▀▄
            ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀           */
+
 /*--------------IMPORTS------------- */
-@import url(https://schnensch0.github.io/zelk/main.css);
-@import url(https://crearts-community.github.io/Settings-Icons/clients/powercord.css);
+@import url(https://raw.githubusercontent.com/moonmoon97/zelk_moon/main/main_update.css);
+@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+/*@import url(https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css);*/
+
 /*--------------COLORS---------------*/
 /*------remove / and * to apply------*/
 /* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/blue.css); */
@@ -13,6 +23,7 @@
 /* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/purple.css); */
 /* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/red.css); */
 /* @import url(https://raw.githack.com/schnensch0/zelk/main/colors/discord.css); */
+
 /*-------------VARIABLES-------------*/
 :root {
   /* set to 'unset' to show */
@@ -22,22 +33,22 @@
   /* direct message box */
   --message: none;
   /* set to '4px solid' to show */
-  --embed-color: none;
+  --embed-color: 4px solid;
   /* set to 'Inter', sans-serif !important to use Inter font*/
-  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --font-primary: Whitney, "Inter", Helvetica, Arial, sans-serif;
+  --font-display: Whitney, "Inter", Helvetica, Arial, sans-serif !important;
   --border-radius-1: 10px;
   --border-radius-2: 8px;
 }
 /*-----------CUSTOM COLORS-----------*/
 /*-------------DARK MODE-------------*/
 /*---------------BASIC---------------*/
-.theme-dark {
-  --accent-color: #bde6fb;
-  --background-1: #171d20;
-  --background-2: #1e2529;
-  --background-accent: #1e2529;
-  --border-color: #273034;
+  .theme-dark {
+    --accent-color: #9cdeffda;
+    --background-1: #171d20;
+    --background-2: #1e2529;
+    --background-accent: #1e2529;
+    --border-color: #273034;
 }
 /*-------------LIGHT MODE------------*/
 .theme-light {
@@ -52,12 +63,12 @@
   /* background */
   --background-primary: var(--background-1);
   --background-primary-alt: var(--background-1);
-  --background-secondary: var(--background-1);
-  --background-secondary-alt: var(--background-1);
-  --background-tertiary: var(--background-2);
+  --background-secondary: var(--background-1); /*channel list*/
+  --background-secondary-alt: var(--background-1); /*user "panel" bottom left*/
+  --background-tertiary: var(--background-2); /*background of server list, user list and text box*/
   --background-accent-gradient: var(--background-2);
   --background-floating: var(--background-1);
-  --background-mentioned: #bde6fb10;
+  --background-mentioned: hsl(var(--yellow-300-hsl)/0.08);
   --background-mentioned-hover: #bde6fb15;
   /* modifiers */
   --background-modifier-hover: #262e33;
@@ -66,7 +77,7 @@
   --background-modifier-accent: transparent;
   --background-message-hover: transparent;
   /* text */
-  --text-normal: var(--accent-color);
+  --text-normal: #c6ecff;
   --text-positive: var(--text-normal);
   --text-muted: #6d8692;
   --text-link: #edf8fe;
@@ -82,14 +93,14 @@
   --control-brand-foreground: var(--accent-color);
   --info-warning-foreground: var(--accent-color);
   --tab-selected: #354249;
-  --switch: #3d4c53;
+  --switch: #533d51;
   --activity-card-background: var(--background-1);
   --brand-experiment: var(--accent-color) !important;
   /* buttons */
   --button-background: #2a3439;
   --button-background-hover: #354249;
   --button-background-active: #4d5f68;
-  --button-accent: var(--accent-color);
+  --button-accent: #0f758a3a;
   --button-accent-hover: #d2f3ff;
   --button-accent-active: #8dd4f8;
   --button-destructive: #fb7c7c;
@@ -144,3 +155,18 @@
   --button-destructive-hover: #ff929b;
   --button-destructive-active: #fa4a4a;
 }
+/*-----------DON'T CHANGE------------*/
+:root {
+  --outdated-122: none !important;
+}
+/*  usrbg | snippet by _david_#0218  */
+.userPopout-2j1gM4[style*="--user-background"] .banner__6d414, .root-8LYsGj[style*="--user-background"] .banner__6d414 {
+  height: 120px;
+  background: var(--background-tertiary) var(--user-background) var(--user-popout-position, center) center / cover !important;
+}
+.root-8LYsGj[style*="--user-background"] .banner__6d414 {
+  height: 240px;
+}
+/*.mentioned__58017:hover {
+  background-color: hsl(var(--yellow-300-hsl)/0.08) !important;
+}*/
